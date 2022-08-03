@@ -1,0 +1,19 @@
+﻿@using Abc.MvcWeb.Models
+@model Abc.MvcWeb.Models.Favori
+
+<style>
+
+    #favori {
+        color: white;
+    }
+</style>
+
+<ul class="navbar-nav  my-2 my-lg-0">
+    <li id="favori" class="nav-item">
+        <a class="nav-link" href="/Favori">Favoriler
+            @*<i class="fa-solid fa-circle-heart"></i>*@
+            (@Model.FavoriLines.Count)
+        </a>
+
+    </li>
+</ul>
